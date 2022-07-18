@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 0642f7e0638ae9840ba3d7e94d7d9890
+guid: bde4f7c9541837844b8f7dd19b995225
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5607819680231318820
-    second: voltar_0
+      213: 7175261627662145010
+    second: Creditos_0
   - first:
-      213: -2212626251904037327
-    second: voltar_1
+      213: -7215632094254202071
+    second: Creditos_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: voltar_0
+      name: Creditos_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
+        y: 43
         width: 53
-        height: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +123,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 425e1a4a94af2dd40800000000000000
-      internalID: 5607819680231318820
+      spriteID: 2f51b472f66a39360800000000000000
+      internalID: 7175261627662145010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: voltar_1
+      name: Creditos_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 45
+        y: 0
         width: 53
-        height: 40
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13e4e8a952c2b41e0800000000000000
-      internalID: -2212626251904037327
+      spriteID: 923021027dcecdb90800000000000000
+      internalID: -7215632094254202071
       vertices: []
       indices: 
       edges: []

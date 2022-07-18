@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 0642f7e0638ae9840ba3d7e94d7d9890
+guid: 430a5a682be974d4ba00e54bc0c77c1c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5607819680231318820
-    second: voltar_0
+      213: 6229193590179729222
+    second: voltar 1_0
   - first:
-      213: -2212626251904037327
-    second: voltar_1
+      213: -8415447615426000785
+    second: voltar 1_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,34 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: voltar_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1
-        width: 53
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 425e1a4a94af2dd40800000000000000
-      internalID: 5607819680231318820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: voltar_1
+      name: voltar 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 45
         width: 53
-        height: 40
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +123,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13e4e8a952c2b41e0800000000000000
-      internalID: -2212626251904037327
+      spriteID: 64f8dcb019a827650800000000000000
+      internalID: 6229193590179729222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voltar 1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6800a01bf2563b80800000000000000
+      internalID: -8415447615426000785
       vertices: []
       indices: 
       edges: []

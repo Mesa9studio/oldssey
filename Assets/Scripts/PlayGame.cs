@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class PlayGame : MonoBehaviour {
 
         public GameObject PanelCredits;
         public GameObject PanelConfig;
-        public AudioSource Audio;
 
         public void StartGame() {
                     Debug.Log("Começa a cutscene!");
@@ -54,13 +54,17 @@ public class PlayGame : MonoBehaviour {
               }
         }
         public void ChangeMusic() {
-              if(Audio.isPlaying) {
-                        Audio.Pause();
+                
+                if(BgScript.BgInstance.Audio.isPlaying) {
+                        BgScript.BgInstance.Audio.Pause();
+                        Debug.Log("Music geral off");
                         GameObject.Find("ButtonMusic").GetComponentInChildren<Text>().text = "Music OFF";
               } else {
-                        Audio.Play();
+                        BgScript.BgInstance.Audio.Play();
+                        Debug.Log("Music geral On");
                         GameObject.Find("ButtonMusic").GetComponentInChildren<Text>().text = "Music ON";
               }
+
         }
 
         public void OpenLinkAna() {

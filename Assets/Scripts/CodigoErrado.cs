@@ -31,6 +31,7 @@ public class CodigoErrado : MonoBehaviour
 
     private void Update()
     {
+
         if (!tempoAcabou)
         {
             ContagemRegressiva();

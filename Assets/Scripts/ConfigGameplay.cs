@@ -15,7 +15,7 @@ public class ConfigGameplay : MonoBehaviour
         {
             PanelCredits.SetActive(false);
         }
-        Debug.Log("Créditos fechado");
+        Debug.Log("Crï¿½ditos fechado");
     }
 
     public void CloseConfig()
@@ -24,7 +24,7 @@ public class ConfigGameplay : MonoBehaviour
         {
             PanelConfig.SetActive(false);
         }
-        Debug.Log("Configurações fechadas");
+        Debug.Log("Configuraï¿½ï¿½es fechadas");
     }
 
     public void ChangeSound()
@@ -45,11 +45,13 @@ public class ConfigGameplay : MonoBehaviour
         if (Audio.isPlaying)
         {
             Audio.Pause();
+            
             GameObject.Find("ButtonMusic").GetComponentInChildren<Text>().text = "Music OFF";
         }
         else
         {
             Audio.Play();
+            
             GameObject.Find("ButtonMusic").GetComponentInChildren<Text>().text = "Music ON";
         }
     }

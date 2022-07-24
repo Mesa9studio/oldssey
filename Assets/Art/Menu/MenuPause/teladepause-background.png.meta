@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: b837e28c88f613340949c776ed5db6c8
+guid: 2d8026e8dea850b4c989fd006138fecc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 636754563579297457
-    second: Som e Musica_0
-  - first:
-      213: 2846029609923663761
-    second: Som e Musica_1
-  - first:
-      213: -6265913787459818495
-    second: Som e Musica_2
-  - first:
-      213: -5588767781276849169
-    second: Som e Musica_3
+      213: -3927196744824243580
+    second: teladepause-background_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Som e Musica_0
+      name: teladepause-background_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 110
-        width: 96
-        height: 91
+        x: 72
+        y: 86
+        width: 323
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,71 +120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1beb043e6e436d800800000000000000
-      internalID: 636754563579297457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Som e Musica_1
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 103
-        width: 114
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1975ebfe9d02f7720800000000000000
-      internalID: 2846029609923663761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Som e Musica_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 9
-        width: 127
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10c2c39cb900b09a0800000000000000
-      internalID: -6265913787459818495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Som e Musica_3
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 7
-        width: 126
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: feb68d04055b072b0800000000000000
-      internalID: -5588767781276849169
+      spriteID: 48a3ea52e5bcf79c0800000000000000
+      internalID: -3927196744824243580
       vertices: []
       indices: 
       edges: []

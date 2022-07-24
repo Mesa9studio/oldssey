@@ -20,9 +20,9 @@ public class CodigoErrado : MonoBehaviour
     public Text segundos;
     private int vida_personagem;
     private int bateria = 4;
-    private bool isPaused;
-    public string cena;
-    public GameObject pauseMenu;
+   // private bool isPaused;
+   // public string cena;
+   // public GameObject pauseMenu;
 
 
     private void Start()
@@ -34,8 +34,8 @@ public class CodigoErrado : MonoBehaviour
 
     private void Update()
     {
-        if (!isPaused)
-        {
+       // if (!isPaused)
+       // {
         if (!tempoAcabou)
         {
             ContagemRegressiva();
@@ -51,18 +51,18 @@ public class CodigoErrado : MonoBehaviour
             volta.GameOver();
         }
 
-        }
+       // }
 
-        if (Input.touchCount > 0)
+      /*  if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);           
             TelaPause();
 
-        }
+        }*/
 
     }
 
-    public void TelaPause()
+   /* public void TelaPause()
     {
         if (isPaused)
         {
@@ -77,7 +77,7 @@ public class CodigoErrado : MonoBehaviour
             pauseMenu.SetActive(true);
 
         }
-    }
+    }*/
 
     public void ContagemRegressiva()
     {

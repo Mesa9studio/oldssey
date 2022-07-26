@@ -9,10 +9,12 @@ public class PlayGame : MonoBehaviour {
         public GameObject PanelCredits;
         public GameObject PanelConfig;
         public AudioSource Audio;
+   
+    
 
         public void StartGame() {
-                    Debug.Log("Começa a cutscene!");
-                    SceneManager.LoadScene("CenaInventario");
+        
+                    SceneManager.LoadScene("Intro");
         }
         
         public void ShowConfig() {

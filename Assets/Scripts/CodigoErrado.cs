@@ -20,6 +20,8 @@ public class CodigoErrado : MonoBehaviour
     public Text segundos;
     private int vida_personagem;
     private int bateria = 4;
+    public GameObject PainelGameOver;
+    
    // private bool isPaused;
    // public string cena;
    // public GameObject pauseMenu;
@@ -47,7 +49,7 @@ public class CodigoErrado : MonoBehaviour
         if (bateria == 0)
         {
             //chamar game over aqui
-            Debug.Log("Gameover");
+            PainelGameOver.SetActive(true);
             volta.GameOver();
         }
 

@@ -108,12 +108,15 @@ public class Inventory : MonoBehaviour
             }
         }
         return true;
+        
     }
 
     public void Clear(){
         for(int i = 0; i < 4; i++){
             imagensSenha[i].sprite = null;
             entrada[i] = -1;
+            podeBotar = true;
+           
         }
         indexSenha = 0;
     }

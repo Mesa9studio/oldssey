@@ -21,7 +21,7 @@ public class CodigoErrado : MonoBehaviour
     private int vida_personagem;
     private int bateria = 4;
     public GameObject PainelGameOver;
-    
+
    // private bool isPaused;
    // public string cena;
    // public GameObject pauseMenu;
@@ -36,8 +36,6 @@ public class CodigoErrado : MonoBehaviour
 
     private void Update()
     {
-       // if (!isPaused)
-       // {
         if (!tempoAcabou)
         {
             ContagemRegressiva();
@@ -57,7 +55,7 @@ public class CodigoErrado : MonoBehaviour
 
       /*  if (Input.touchCount > 0)
         {
-            Touch touch = Input.GetTouch(0);           
+            Touch touch = Input.GetTouch(0);
             TelaPause();
 
         }*/

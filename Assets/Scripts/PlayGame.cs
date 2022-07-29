@@ -4,24 +4,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class PlayGame : MonoBehaviour {
 
         public GameObject PanelCredits;
         public GameObject PanelConfig;
         public AudioSource Audio;
-   
-    
-
         public void StartGame() {
-        
+
                     SceneManager.LoadScene("Intro");
         }
-        
+
         public void ShowConfig() {
                if(PanelConfig != null) {
                         PanelConfig.SetActive(true);
-                }   
-                Debug.Log("Abriu config");  
+                }
+                Debug.Log("Abriu config");
         }
 
         public void ShowCredits() {
@@ -29,40 +27,44 @@ public class PlayGame : MonoBehaviour {
                         PanelCredits.SetActive(true);
                 }
                 Debug.Log("Abriu créditos");
-                    
+
         }
 
         public void CloseCredits() {
               if(PanelCredits != null) {
                         PanelCredits.SetActive(false);
                 }
-              Debug.Log("Créditos fechado");  
+              Debug.Log("Créditos fechado");
         }
 
         public void CloseConfig() {
               if(PanelConfig != null) {
                         PanelConfig.SetActive(false);
                 }
-              Debug.Log("Configurações fechadas");  
+              Debug.Log("Configurações fechadas");
         }
 
         public void ChangeSound() {
               if (GameObject.Find("ButtonSound").GetComponentInChildren<Text>().text == "Sound ON") {
                         GameObject.Find("ButtonSound").GetComponentInChildren<Text>().text = "Sound OFF";
-                        Debug.Log("Sound off");  
+                        Debug.Log("Sound off");
               } else {
                         GameObject.Find("ButtonSound").GetComponentInChildren<Text>().text = "Sound ON";
-                        Debug.Log("Sound on");  
+                        Debug.Log("Sound on");
               }
         }
         public void ChangeMusic() {
-              if(Audio.isPlaying) {
-                        Audio.Pause();
+
+                if(BgScript.BgInstance.Audio.isPlaying) {
+                        BgScript.BgInstance.Audio.Pause();
+                        Debug.Log("Music geral off");
                         GameObject.Find("ButtonMusic").GetComponentInChildren<Text>().text = "Music OFF";
               } else {
-                        Audio.Play();
+                        BgScript.BgInstance.Audio.Play();
+                        Debug.Log("Music geral On");
                         GameObject.Find("ButtonMusic").GetComponentInChildren<Text>().text = "Music ON";
               }
+
         }
 
         public void OpenLinkAna() {

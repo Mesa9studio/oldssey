@@ -40,7 +40,7 @@ public class CodigoErrado : MonoBehaviour
         {
             ContagemRegressiva();
         } else {
-            Debug.Log("AAAAAAAAA");
+            
             volta.GameOver();
         }
 
@@ -51,33 +51,35 @@ public class CodigoErrado : MonoBehaviour
             volta.GameOver();
         }
 
-       // }
+      
 
-      /*  if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            TelaPause();
+        // }
 
-        }*/
+        /*  if (Input.touchCount > 0)
+          {
+              Touch touch = Input.GetTouch(0);
+              TelaPause();
+
+          }*/
 
     }
 
-   /* public void TelaPause()
-    {
-        if (isPaused)
-        {
-            isPaused = false;
-            Time.timeScale = 1f;
-            pauseMenu.SetActive(false);
-        }
-        else
-        {
-            isPaused = true;
-            Time.timeScale = 0f;
-            pauseMenu.SetActive(true);
+    /* public void TelaPause()
+     {
+         if (isPaused)
+         {
+             isPaused = false;
+             Time.timeScale = 1f;
+             pauseMenu.SetActive(false);
+         }
+         else
+         {
+             isPaused = true;
+             Time.timeScale = 0f;
+             pauseMenu.SetActive(true);
 
-        }
-    }*/
+         }
+     }*/
 
     public void ContagemRegressiva()
     {
@@ -86,16 +88,66 @@ public class CodigoErrado : MonoBehaviour
         if (tempoInicial > 0)
         {
             tempoAcabou = false;
-        }
+            
+            
+        }        
         if (tempoInicial < 0)
+        {
             tempoAcabou = true;
+            
+        }      
+        if(tempoInicial <= 25)
+        {
+           // segundos.text = tempoInicial.ToString("25");
+            bateriaImagem.GetComponent<Image>().sprite = baterias[2];
+
+        }
+
+        if (tempoInicial <= 15)
+        {
+            // segundos.text = tempoInicial.ToString("25");
+            bateriaImagem.GetComponent<Image>().sprite = baterias[1];
+
+        }
+
+        if (tempoInicial <= 5)
+        {
+            // segundos.text = tempoInicial.ToString("25");
+            bateriaImagem.GetComponent<Image>().sprite = baterias[0];
+
+        }
+
     }
 
+    
     public void TiraBateria(){
-        Debug.Log(bateria);
+        
         bateria--;
-        bateriaImagem.sprite = baterias[bateria-1];
+        MudancaBateria();
+        
+       // bateriaImagem.sprite = baterias[bateria-1];
+
     }
+
+    public void MudancaBateria()
+    {
+        switch (bateria)
+        {
+            case 1:
+                bateriaImagem.GetComponent<Image>().sprite = baterias[0];
+                break;
+            case 2:
+                bateriaImagem.GetComponent<Image>().sprite = baterias[1];
+                break;
+            case 3:
+                bateriaImagem.GetComponent<Image>().sprite = baterias[2];
+                break;
+            
+        }
+
+    }
+
+
 
 
 }

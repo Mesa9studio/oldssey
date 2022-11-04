@@ -9,10 +9,18 @@ public class PlayGame : MonoBehaviour {
 
         public GameObject PanelCredits;
         public GameObject PanelConfig;
-        public AudioSource Audio;
+        // public AudioSource Audio;
+
         public void StartGame() {
 
                     SceneManager.LoadScene("Intro");
+
+                    BgScript.BgInstance.Audio.clip = BgScript.BgInstance.cutsceneClip;
+                    
+                    if(!BgScript.BgInstance.isPaused) {
+                        BgScript.BgInstance.Audio.Play();
+                    }
+                    
         }
 
         public void ShowConfig() {
@@ -57,10 +65,12 @@ public class PlayGame : MonoBehaviour {
 
                 if(BgScript.BgInstance.Audio.isPlaying) {
                         BgScript.BgInstance.Audio.Pause();
+                        BgScript.BgInstance.isPaused = true;
                         Debug.Log("Music geral off");
                         GameObject.Find("ButtonMusic").GetComponentInChildren<Text>().text = "Music OFF";
               } else {
                         BgScript.BgInstance.Audio.Play();
+                        BgScript.BgInstance.isPaused = false;
                         Debug.Log("Music geral On");
                         GameObject.Find("ButtonMusic").GetComponentInChildren<Text>().text = "Music ON";
               }

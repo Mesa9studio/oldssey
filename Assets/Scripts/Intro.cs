@@ -14,5 +14,11 @@ public class Intro : MonoBehaviour
     {
         yield return new WaitForSeconds(26);
         SceneManager.LoadScene("CenaInventario");
+
+        BgScript.BgInstance.Audio.clip = BgScript.BgInstance.gameplayClip;
+        
+        if(!BgScript.BgInstance.isPaused) {
+            BgScript.BgInstance.Audio.Play();
+        }
     }
 }

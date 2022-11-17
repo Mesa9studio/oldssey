@@ -23,11 +23,21 @@ public class GameOver : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("inicial_menu");
+        BgScript.BgInstance.Audio.clip = BgScript.BgInstance.mainMenuClip;
+        
+        if(!BgScript.BgInstance.isPaused) {
+            BgScript.BgInstance.Audio.Play();
+        }
     }
 
     public void RestartGame()
     {
         SceneManager.LoadScene("CenaInventario");
+        BgScript.BgInstance.Audio.clip = BgScript.BgInstance.gameplayClip;
+        
+        if(!BgScript.BgInstance.isPaused) {
+            BgScript.BgInstance.Audio.Play();
+        }
     }
 
     public void QuitGame()

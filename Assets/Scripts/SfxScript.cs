@@ -3,25 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BgScript : MonoBehaviour
+public class SfxScript : MonoBehaviour
 {
-        public static BgScript BgInstance = null;
+        public static SfxScript SfxInstance = null;
         public AudioSource Audio;
-        public AudioClip cutsceneClip;
-        public AudioClip gameplayClip;
-        public AudioClip victoryClip;
-        public AudioClip gameoverClip;
-        public AudioClip mainMenuClip;
+        public AudioClip sfxOnClip;
+        public AudioClip sfxOffClip;
+        
         public bool isPaused = false;
 
         private void Awake() {
 
-            if(BgInstance != null && BgInstance != this) {
+            if(SfxInstance != null && SfxInstance != this) {
                 Destroy(gameObject);
 
             } else {
 
-                BgInstance = this;
+                SfxInstance = this;
                 DontDestroyOnLoad(gameObject);
             }    
 

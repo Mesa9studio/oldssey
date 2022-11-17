@@ -6383,12 +6383,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 8351b35404d65894d9f272d18438dfe1, type: 3}
     - target: {fileID: 4402097120221540591, guid: 853148653fea4634fa46f488aeea217f, type: 3}
+      propertyPath: victoryClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d8f488931335cb14ba230f01a2997a73, type: 3}
+    - target: {fileID: 4402097120221540591, guid: 853148653fea4634fa46f488aeea217f, type: 3}
       propertyPath: cutsceneClip
       value: 
       objectReference: {fileID: 8300000, guid: 8351b35404d65894d9f272d18438dfe1, type: 3}
     - target: {fileID: 4402097120221540591, guid: 853148653fea4634fa46f488aeea217f, type: 3}
+      propertyPath: gameoverClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 083395eeb622a804aa096b330138920a, type: 3}
+    - target: {fileID: 4402097120221540591, guid: 853148653fea4634fa46f488aeea217f, type: 3}
       propertyPath: gameplayClip
       value: 
       objectReference: {fileID: 8300000, guid: ab47fd40b2fd08144b5951d9e3784377, type: 3}
+    - target: {fileID: 4402097120221540591, guid: 853148653fea4634fa46f488aeea217f, type: 3}
+      propertyPath: mainMenuClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc0d5edb477dc72428f422b5c4eafe1c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853148653fea4634fa46f488aeea217f, type: 3}

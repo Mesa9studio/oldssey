@@ -1788,12 +1788,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4402097120221540590, guid: 853148653fea4634fa46f488aeea217f, type: 3}
       propertyPath: Loop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4402097120221540590, guid: 853148653fea4634fa46f488aeea217f, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: fc0d5edb477dc72428f422b5c4eafe1c, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4402097120221540591, guid: 853148653fea4634fa46f488aeea217f, type: 3}
       propertyPath: otherClip
       value: 
@@ -1838,10 +1838,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9871d160def93da428e2fafa4ab6760f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Audio: {fileID: 0}
+  Audio: {fileID: 527303463}
   sfxOnClip: {fileID: 0}
   sfxOffClip: {fileID: 0}
   isPaused: 0
+--- !u!82 &527303463 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4402097120221540590, guid: 853148653fea4634fa46f488aeea217f, type: 3}
+  m_PrefabInstance: {fileID: 527303460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &533842789
 GameObject:
   m_ObjectHideFlags: 0
@@ -6513,5 +6518,13 @@ PrefabInstance:
       propertyPath: mainMenuClip
       value: 
       objectReference: {fileID: 8300000, guid: fc0d5edb477dc72428f422b5c4eafe1c, type: 3}
+    - target: {fileID: 4402097120221540591, guid: 853148653fea4634fa46f488aeea217f, type: 3}
+      propertyPath: fastMusicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dee8368fe4295a847ba0ccb3d95b10de, type: 3}
+    - target: {fileID: 4402097120221540591, guid: 853148653fea4634fa46f488aeea217f, type: 3}
+      propertyPath: fast2xMusicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ff9eab41463f0b54bbe974ee51b7ab9d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853148653fea4634fa46f488aeea217f, type: 3}

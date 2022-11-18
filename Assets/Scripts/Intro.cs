@@ -21,4 +21,14 @@ public class Intro : MonoBehaviour
             BgScript.BgInstance.Audio.Play();
         }
     }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("CenaInventario");
+        BgScript.BgInstance.Audio.clip = BgScript.BgInstance.gameplayClip;
+        
+        if(!BgScript.BgInstance.isPaused) {
+            BgScript.BgInstance.Audio.Play();
+        }
+    }
 }

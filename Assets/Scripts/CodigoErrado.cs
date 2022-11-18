@@ -121,7 +121,7 @@ public class CodigoErrado : MonoBehaviour
 
     public void MudarMusica()
     {
-        if (tempoInicial < 15 & tempoInicial > 14.9900){
+        if (tempoInicial < 20 & tempoInicial > 19.9900){
             
             Debug.Log("Muda musica 2x");
             BgScript.BgInstance.Audio.clip = BgScript.BgInstance.fastMusicClip;

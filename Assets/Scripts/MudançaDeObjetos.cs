@@ -6,20 +6,16 @@ using UnityEngine.UI;
 public class MudançaDeObjetos : MonoBehaviour
 {
 
-    public GameObject caixaRegistradoraDark;
-    public GameObject caixaRegistradoraNormal;
+    public GameObject imageDark;
+    public GameObject imageNormal;
 
 
 
-    void Update()
+    public void TrocaImagem()
     {
-       
-
-        if(Input.touchCount > 0)
-        {
-            caixaRegistradoraDark.SetActive(false);
-            caixaRegistradoraNormal.SetActive(true);
-        }
+        
+        imageDark.SetActive(false);
+        imageNormal.SetActive(true);
     }
 
 

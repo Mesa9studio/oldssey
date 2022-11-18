@@ -12,6 +12,8 @@ public class BgScript : MonoBehaviour
         public AudioClip victoryClip;
         public AudioClip gameoverClip;
         public AudioClip mainMenuClip;
+        public AudioClip fastMusicClip;
+        public AudioClip fast2xMusicClip;
         public bool isPaused = false;
 
         private void Awake() {

@@ -108,6 +108,12 @@ public class CodigoErrado : MonoBehaviour
             // segundos.text = tempoInicial.ToString("25");
             bateriaImagem.GetComponent<Image>().sprite = baterias[1];
 
+            BgScript.BgInstance.Audio.clip = BgScript.BgInstance.fastMusicClip;
+                    
+            if(!BgScript.BgInstance.isPaused) {
+                BgScript.BgInstance.Audio.Play();
+            }
+
         }
 
         if (tempoInicial <= 5)
@@ -115,6 +121,11 @@ public class CodigoErrado : MonoBehaviour
             // segundos.text = tempoInicial.ToString("25");
             bateriaImagem.GetComponent<Image>().sprite = baterias[0];
 
+            BgScript.BgInstance.Audio.clip = BgScript.BgInstance.fast2xMusicClip;
+                    
+            if(!BgScript.BgInstance.isPaused) {
+                BgScript.BgInstance.Audio.Play();
+            }
         }
 
     }

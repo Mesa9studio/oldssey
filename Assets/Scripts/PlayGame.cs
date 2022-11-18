@@ -13,13 +13,15 @@ public class PlayGame : MonoBehaviour {
 
         public void StartGame() {
 
-                    SceneManager.LoadScene("Intro");
+                // SceneManager.LoadScene("Intro");
+                SceneManager.LoadScene("CenaInventario");
+                
 
-                    BgScript.BgInstance.Audio.clip = BgScript.BgInstance.cutsceneClip;
-                    
-                    if(!BgScript.BgInstance.isPaused) {
-                        BgScript.BgInstance.Audio.Play();
-                    }
+                // BgScript.BgInstance.Audio.clip = BgScript.BgInstance.cutsceneClip; 
+                BgScript.BgInstance.Audio.clip = BgScript.BgInstance.gameplayClip;
+                if(!BgScript.BgInstance.isPaused) {
+                BgScript.BgInstance.Audio.Play();
+                }
                     
         }
 

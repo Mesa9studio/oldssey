@@ -51,8 +51,9 @@ public class CodigoErrado : MonoBehaviour
             volta.GameOver();
         }
 
-      
-
+        MudarMusica();
+        
+        
         // }
 
         /*  if (Input.touchCount > 0)
@@ -108,26 +109,37 @@ public class CodigoErrado : MonoBehaviour
             // segundos.text = tempoInicial.ToString("25");
             bateriaImagem.GetComponent<Image>().sprite = baterias[1];
 
-            BgScript.BgInstance.Audio.clip = BgScript.BgInstance.fastMusicClip;
-                    
-            if(!BgScript.BgInstance.isPaused) {
-                BgScript.BgInstance.Audio.Play();
-            }
-
         }
 
         if (tempoInicial <= 5)
         {
             // segundos.text = tempoInicial.ToString("25");
             bateriaImagem.GetComponent<Image>().sprite = baterias[0];
+        }
 
-            BgScript.BgInstance.Audio.clip = BgScript.BgInstance.fast2xMusicClip;
+    }
+
+    public void MudarMusica()
+    {
+        if (tempoInicial < 15 & tempoInicial > 14.9900){
+            
+            Debug.Log("Muda musica 2x");
+            BgScript.BgInstance.Audio.clip = BgScript.BgInstance.fastMusicClip;
                     
             if(!BgScript.BgInstance.isPaused) {
                 BgScript.BgInstance.Audio.Play();
             }
         }
 
+        if (tempoInicial < 5 & tempoInicial > 4.9900){
+
+            Debug.Log("Muda musica 4x");
+            BgScript.BgInstance.Audio.clip = BgScript.BgInstance.fast2xMusicClip;
+                    
+            if(!BgScript.BgInstance.isPaused) {
+                BgScript.BgInstance.Audio.Play();
+            }
+        } 
     }
 
     

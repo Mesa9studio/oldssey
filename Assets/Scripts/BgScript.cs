@@ -35,5 +35,7 @@ public class BgScript : MonoBehaviour
 
         private void Start() {
              Audio = GetComponent<AudioSource>();
+            //  Audio.clip = mainMenuClip;
+            //  Audio.Play();
         }
 }

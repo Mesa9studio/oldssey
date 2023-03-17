@@ -21,6 +21,10 @@ public class CodigoErrado : MonoBehaviour
     private int vida_personagem;
     private int bateria = 4;
     public GameObject PainelGameOver;
+    private bool playingFastMusicClip, playingFast2xMusicClip;
+    public AudioSource Audio2x;
+    public AudioSource Sfx;
+    public bool mudando;
 
    // private bool isPaused;
    // public string cena;
@@ -32,26 +36,27 @@ public class CodigoErrado : MonoBehaviour
         Time.timeScale = 1f;
         tempoInicial = tempoStart;
         bateria = 4;
+
+        
     }
 
     private void Update()
     {
-        if (!tempoAcabou)
+        if (tempoInicial > 0)
         {
             ContagemRegressiva();
         } else {
             
             volta.GameOver();
+            
         }
 
-        if (bateria == 0)
-        {
-            //chamar game over aqui
-            PainelGameOver.SetActive(true);
-            volta.GameOver();
-        }
-
-      
+        // if (bateria == 0)
+        // {
+        //     //chamar game over aqui
+        //     PainelGameOver.SetActive(true);
+        //     volta.GameOver();
+        // }
 
         // }
 
@@ -110,21 +115,26 @@ public class CodigoErrado : MonoBehaviour
 
             BgScript.BgInstance.Audio.clip = BgScript.BgInstance.fastMusicClip;
                     
-            if(!BgScript.BgInstance.isPaused) {
+            if(!BgScript.BgInstance.isPaused && !playingFastMusicClip) {
+                playingFastMusicClip = true;
                 BgScript.BgInstance.Audio.Play();
+                
             }
 
         }
 
         if (tempoInicial <= 5)
         {
+
             // segundos.text = tempoInicial.ToString("25");
             bateriaImagem.GetComponent<Image>().sprite = baterias[0];
 
-            BgScript.BgInstance.Audio.clip = BgScript.BgInstance.fast2xMusicClip;
-                    
-            if(!BgScript.BgInstance.isPaused) {
-                BgScript.BgInstance.Audio.Play();
+            // BgScript.BgInstance.Audio.clip = BgScript.BgInstance.fast2xMusicClip;   
+            BgScript.BgInstance.Audio.Stop();     
+            if(!BgScript.BgInstance.isPaused && !playingFast2xMusicClip) {
+                playingFast2xMusicClip = true;
+                // BgScript.BgInstance.Audio.Play();
+                Audio2x.Play();
             }
         }
 
@@ -158,7 +168,23 @@ public class CodigoErrado : MonoBehaviour
 
     }
 
+    public void PlaySenhorTriste(AudioClip clip)
+    {
+        
+        SfxScript.SfxInstance.Audio.clip = clip;
+        SfxScript.SfxInstance.Audio.PlayDelayed((float)0.5);
+        SfxScript.SfxInstance.Audio.Play();
+        
+    }
 
+    public void PlaySenhorFeliz(AudioClip clip)
+    {
+
+        SfxScript.SfxInstance.Audio.clip = clip;
+        SfxScript.SfxInstance.Audio.PlayDelayed(0);
+        SfxScript.SfxInstance.Audio.Play();
+        
+    }
 
 
 }

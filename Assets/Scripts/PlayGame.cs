@@ -11,15 +11,28 @@ public class PlayGame : MonoBehaviour {
         public GameObject PanelConfig;
         // public AudioSource Audio;
 
+        private void Update() {
+
+                if (BgScript.BgInstance.isPaused)
+                {
+                        GameObject.Find("ButtonMusic").GetComponentInChildren<Text>().text = "Music OFF";
+                }
+                if (SfxScript.SfxInstance.isPaused)
+                {
+                        GameObject.Find("ButtonSound").GetComponentInChildren<Text>().text = "Sound OFF";
+                }
+        }
+
         public void StartGame() {
 
                     SceneManager.LoadScene("Intro");
+                // SceneManager.LoadScene("CenaInventario");
 
                     BgScript.BgInstance.Audio.clip = BgScript.BgInstance.cutsceneClip;
-                    
-                    if(!BgScript.BgInstance.isPaused) {
-                        BgScript.BgInstance.Audio.Play();
-                    }
+                // BgScript.BgInstance.Audio.clip = BgScript.BgInstance.gameplayClip;
+                if(!BgScript.BgInstance.isPaused) {
+                BgScript.BgInstance.Audio.Play();
+                }
                     
         }
 
@@ -55,8 +68,9 @@ public class PlayGame : MonoBehaviour {
         public void ChangeSound() {
               if (GameObject.Find("ButtonSound").GetComponentInChildren<Text>().text == "Sound ON") {
 
-                        SfxScript.SfxInstance.Audio.clip = SfxScript.SfxInstance.sfxOffClip;
-                        SfxScript.SfxInstance.Audio.Play();
+                        // SfxScript.SfxInstance.Audio.clip = SfxScript.SfxInstance.sfxOffClip;
+                        // SfxScript.SfxInstance.Audio.Pause();
+                        SfxScript.SfxInstance.isPaused = true;
                         SfxScript.SfxInstance.Audio.mute = !SfxScript.SfxInstance.Audio.mute;
                         
                         GameObject.Find("ButtonSound").GetComponentInChildren<Text>().text = "Sound OFF";
@@ -64,7 +78,8 @@ public class PlayGame : MonoBehaviour {
                         Debug.Log("Sound off");
               } else {
                         
-                        SfxScript.SfxInstance.Audio.Play();
+                        // SfxScript.SfxInstance.Audio.Play();
+                        SfxScript.SfxInstance.isPaused = false;
                         SfxScript.SfxInstance.Audio.mute = !SfxScript.SfxInstance.Audio.mute;
                         
                         GameObject.Find("ButtonSound").GetComponentInChildren<Text>().text = "Sound ON";

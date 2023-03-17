@@ -7,8 +7,10 @@ public class SfxScript : MonoBehaviour
 {
         public static SfxScript SfxInstance = null;
         public AudioSource Audio;
-        public AudioClip sfxOnClip;
-        public AudioClip sfxOffClip;
+        public AudioClip senhorTriste;
+        public AudioClip senhorFeliz;
+        public AudioClip maquinaRegistradora;
+        public AudioClip cesta;
         
         public bool isPaused = false;
 
@@ -31,5 +33,26 @@ public class SfxScript : MonoBehaviour
 
         private void Start() {
              Audio = GetComponent<AudioSource>();
+        }
+
+        public void SenhorTristePlay()
+        {
+            Audio.clip = senhorTriste;
+            Audio.Play();
+        }
+        public void SenhorFelizPlay()
+        {
+            Audio.clip = senhorFeliz;
+            Audio.Play();
+        }
+        public void MaquinaRegistradoraePlay()
+        {
+            Audio.clip = senhorTriste;
+            Audio.Play();
+        }
+        public void CestaPlay()
+        {
+            Audio.clip = senhorTriste;
+            Audio.Play();
         }
 }

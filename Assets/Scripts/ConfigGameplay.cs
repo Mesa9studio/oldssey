@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ConfigGameplay : MonoBehaviour
 {
     public AudioSource Audio;
+    public AudioSource Sound;
     public GameObject PanelCredits;
     public GameObject PanelConfig;
 

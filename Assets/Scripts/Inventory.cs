@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
+    public static Inventory InventoryInstance = null;
     public int sizeOfInventory = 4;
     public InventorySlots[] slots;
     public Image[] imagensSenha;
@@ -23,7 +24,18 @@ public class Inventory : MonoBehaviour
     
 
 
+    private void Awake() {
 
+        if(InventoryInstance != null && InventoryInstance != this) {
+            Destroy(gameObject);
+
+        } else {
+
+            InventoryInstance = this;
+            DontDestroyOnLoad(gameObject);
+        }    
+
+    }
 
     void Start()
     {

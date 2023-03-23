@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour
 {
@@ -32,7 +33,7 @@ public class Inventory : MonoBehaviour
         } else {
 
             InventoryInstance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }    
 
     }
@@ -94,7 +95,7 @@ public class Inventory : MonoBehaviour
                     if (CompararArray())
                     {
                         Debug.Log("GANHOU MINHE QUERIDE");
-                        codigoErrado.volta.Vitoria();
+                    SceneManager.LoadScene("Vitoria");
                         // ganhou
                         // chamar tela/cena de vitória aqui
                     }

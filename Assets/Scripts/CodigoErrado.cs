@@ -45,10 +45,10 @@ public class CodigoErrado : MonoBehaviour
         if (tempoInicial > 0)
         {
             ContagemRegressiva();
-        } else {
-            
-            volta.GameOver();
-            
+        }
+        if (tempoAcabou == true)
+        {
+            SceneManager.LoadScene("gameover");
         }
 
         // if (bateria == 0)

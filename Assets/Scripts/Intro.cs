@@ -13,8 +13,11 @@ public class Intro : MonoBehaviour
    IEnumerator StartIntro()
     {
         yield return new WaitForSeconds(26);
+        SkipScene();
+    }
+    public void SkipScene()
+    {
         SceneManager.LoadScene("CenaInventario");
-
         BgScript.BgInstance.Audio.clip = BgScript.BgInstance.gameplayClip;
         
         if(!BgScript.BgInstance.isPaused) {

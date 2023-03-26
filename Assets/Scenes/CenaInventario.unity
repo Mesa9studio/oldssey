@@ -3803,6 +3803,7 @@ GameObject:
   - component: {fileID: 735500132}
   - component: {fileID: 735500131}
   - component: {fileID: 735500134}
+  - component: {fileID: 735500135}
   m_Layer: 5
   m_Name: Carteira
   m_TagString: Untagged
@@ -3872,7 +3873,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 735500132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 735500134}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: click
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735500135}
+        m_TargetAssemblyTypeName: "Mudan\xE7aDeObjetos, Assembly-CSharp"
+        m_MethodName: ObjectClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2116748851}
+        m_TargetAssemblyTypeName: CodigoErrado, Assembly-CSharp
+        m_MethodName: PlaySenhorFeliz
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: aecf027def58ab742b14eb096284afb2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &735500132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3893,7 +3930,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6037b43af96012d9fac46e9fa5f1a646, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8150141b7e8d68d43b965a7e0914580f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3930,6 +3967,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &735500135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735500129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00196404d58ab14a8bb7cd0a3971793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idItem: 1
+  anim: {fileID: 735500134}
 --- !u!1 &746967400
 GameObject:
   m_ObjectHideFlags: 0
@@ -10883,6 +10934,7 @@ GameObject:
   - component: {fileID: 2142303296}
   - component: {fileID: 2142303295}
   - component: {fileID: 2142303298}
+  - component: {fileID: 2142303299}
   m_Layer: 5
   m_Name: CaixaLeite
   m_TagString: Untagged
@@ -10952,7 +11004,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2142303296}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2142303298}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: click
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2142303299}
+        m_TargetAssemblyTypeName: "Mudan\xE7aDeObjetos, Assembly-CSharp"
+        m_MethodName: ObjectClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2116748851}
+        m_TargetAssemblyTypeName: CodigoErrado, Assembly-CSharp
+        m_MethodName: PlaySenhorFeliz
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: aecf027def58ab742b14eb096284afb2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2142303296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10973,7 +11061,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9bc2dd0b0360b9680acd1b092166fa9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 62cefbdff69da7543ae9a83728e2f640, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11010,3 +11098,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2142303299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142303293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00196404d58ab14a8bb7cd0a3971793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idItem: 0
+  anim: {fileID: 2142303298}

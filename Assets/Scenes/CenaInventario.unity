@@ -2213,7 +2213,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9bc2dd0b0360b9680acd1b092166fa9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 62cefbdff69da7543ae9a83728e2f640, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3804,6 +3804,7 @@ GameObject:
   - component: {fileID: 735500131}
   - component: {fileID: 735500134}
   - component: {fileID: 735500135}
+  - component: {fileID: 735500136}
   m_Layer: 5
   m_Name: Carteira
   m_TagString: Untagged
@@ -3827,8 +3828,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 96.5, y: 117.29}
-  m_SizeDelta: {x: 19, y: 30.62}
+  m_AnchoredPosition: {x: 90, y: 112.1}
+  m_SizeDelta: {x: 21.39, y: 31.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &735500131
 MonoBehaviour:
@@ -3932,11 +3933,11 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 8150141b7e8d68d43b965a7e0914580f, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
-  m_FillClockwise: 1
+  m_FillClockwise: 0
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
@@ -3981,6 +3982,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idItem: 1
   anim: {fileID: 735500134}
+--- !u!65 &735500136
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735500129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18.93492, y: 17.35731, z: 1}
+  m_Center: {x: 0.083037116, y: -0.041511815, z: 0}
 --- !u!1 &746967400
 GameObject:
   m_ObjectHideFlags: 0
@@ -6285,7 +6299,7 @@ MonoBehaviour:
   - itemID: 0
     itemIcon: {fileID: 21300000, guid: 9bc2dd0b0360b9680acd1b092166fa9e, type: 3}
   - itemID: 1
-    itemIcon: {fileID: 21300000, guid: 6037b43af96012d9fac46e9fa5f1a646, type: 3}
+    itemIcon: {fileID: 21300000, guid: 8150141b7e8d68d43b965a7e0914580f, type: 3}
   - itemID: 2
     itemIcon: {fileID: 21300000, guid: a772e40b5cd1abeeeaa82f0f4ddfff26, type: 3}
   - itemID: 3
@@ -9927,7 +9941,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6037b43af96012d9fac46e9fa5f1a646, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8150141b7e8d68d43b965a7e0914580f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10935,6 +10949,7 @@ GameObject:
   - component: {fileID: 2142303295}
   - component: {fileID: 2142303298}
   - component: {fileID: 2142303299}
+  - component: {fileID: 2142303300}
   m_Layer: 5
   m_Name: CaixaLeite
   m_TagString: Untagged
@@ -10958,8 +10973,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 451.5, y: -43.740005}
-  m_SizeDelta: {x: 18, y: 37.78}
+  m_AnchoredPosition: {x: 373.7, y: -78.3}
+  m_SizeDelta: {x: 19.948, y: 37.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2142303295
 MonoBehaviour:
@@ -11112,3 +11127,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idItem: 0
   anim: {fileID: 2142303298}
+--- !u!65 &2142303300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142303293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.874567, y: 24.720808, z: 1}
+  m_Center: {x: -0.14463498, y: -1.0606863, z: 0}

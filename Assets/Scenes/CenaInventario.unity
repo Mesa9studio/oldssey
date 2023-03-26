@@ -1503,7 +1503,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 0}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -6297,9 +6297,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - itemID: 0
-    itemIcon: {fileID: 21300000, guid: 9bc2dd0b0360b9680acd1b092166fa9e, type: 3}
+    itemIcon: {fileID: 21300000, guid: ca02f4741e3182641917acef84ee181d, type: 3}
   - itemID: 1
-    itemIcon: {fileID: 21300000, guid: 8150141b7e8d68d43b965a7e0914580f, type: 3}
+    itemIcon: {fileID: 21300000, guid: 72c97abad5a074d4f90b437e443eef5b, type: 3}
   - itemID: 2
     itemIcon: {fileID: 21300000, guid: a772e40b5cd1abeeeaa82f0f4ddfff26, type: 3}
   - itemID: 3
